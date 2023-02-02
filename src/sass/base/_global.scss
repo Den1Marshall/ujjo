@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    &::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    &::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body {
+    // font-family: 'Poppins', sans-serif;
+    // font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    // max-width: CHANGETHIS+padding;
+    padding: 0 15px;
+    margin: 0 auto;
+}
