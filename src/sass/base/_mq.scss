@@ -1,0 +1,28 @@
+// laptops
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+// tablets
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+// large mobiles
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+// small devices
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
