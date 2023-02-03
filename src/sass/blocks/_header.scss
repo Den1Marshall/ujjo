@@ -1,17 +1,17 @@
 .header {
     &__container {
+        max-width: 1397px;
         height: 112px;
         margin-top: 2px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        border: 1px solid #000;
+        border: 1px solid var(--border-color);
     }
 
     &__nav {
         display: flex;
         align-items: center; 
-        margin-left: 93px;
-        margin-right: 83px;
 
         &-link {
             font-size: 14px;
@@ -27,7 +27,7 @@
                 margin-right: 86px;
             }
             &:nth-child(3) {
-                margin-right: 63px;
+                margin-right: 19px;
                 max-height: 100%;
             }
         }

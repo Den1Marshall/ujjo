@@ -1,3 +1,33 @@
 .promo {
-    
+    &__container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    &__left {
+        border: 1px solid var(--border-color);
+        border-top: none;
+    }
+
+    &__img-first {
+        max-width: 100%;
+    }
+
+    &__img {
+        padding: 19px;
+        max-width: 100%;
+    }
+
+    &__right {
+        border: 1px solid var(--border-color);
+        border-top: none;
+        border-left: none;
+        // img {
+        //     height: 815px;
+        // }
+    }
+
+    &__title {
+        border-bottom: 1px solid var(--border-color);
+    }
 }

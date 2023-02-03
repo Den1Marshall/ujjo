@@ -10,15 +10,16 @@
         display: flex;
         gap: 28px;
         animation: ribbon-move linear 2s infinite forwards;
+        will-change: auto;
     }
 
     @keyframes ribbon-move {
         from {
-            transform: translateZ(0);
+            transform: translateX(-100%);
         }
 
         to {
-            transform: translate3d(-100%, 0, 0)
+            transform: translateX(8%)
         }
     }
 

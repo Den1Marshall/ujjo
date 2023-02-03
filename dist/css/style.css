@@ -465,15 +465,19 @@ body {
 }
 
 .header__container {
+  max-width: 1397px;
   height: 112px;
   margin-top: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #000;
+  border: 1px solid var(--border-color);
 }
 .header__nav {
   display: -webkit-box;
@@ -482,8 +486,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 93px;
-  margin-right: 83px;
 }
 .header__nav-link {
   font-size: 14px;
@@ -500,7 +502,7 @@ body {
   margin-right: 86px;
 }
 .header__nav-link:nth-child(3) {
-  margin-right: 63px;
+  margin-right: 19px;
   max-height: 100%;
 }
 
@@ -534,6 +536,32 @@ body {
   opacity: 0.8;
 }
 
+.promo__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+.promo__left {
+  border: 1px solid var(--border-color);
+  border-top: none;
+}
+.promo__img-first {
+  max-width: 100%;
+}
+.promo__img {
+  padding: 19px;
+  max-width: 100%;
+}
+.promo__right {
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-left: none;
+}
+.promo__title {
+  border-bottom: 1px solid var(--border-color);
+}
+
 .title {
   margin: 0;
   padding: 24px 0 15px 0;
@@ -544,7 +572,6 @@ body {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--title-color);
-  border-bottom: 1px solid #000;
 }
 
 .ribbon {
@@ -564,25 +591,26 @@ body {
   gap: 28px;
   -webkit-animation: ribbon-move linear 2s infinite forwards;
           animation: ribbon-move linear 2s infinite forwards;
+  will-change: auto;
 }
 @-webkit-keyframes ribbon-move {
   from {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   to {
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translateX(8%);
+            transform: translateX(8%);
   }
 }
 @keyframes ribbon-move {
   from {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   to {
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translateX(8%);
+            transform: translateX(8%);
   }
 }
 .ribbon__text {
