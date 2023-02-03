@@ -1,5 +1,6 @@
 .header {
     &__container {
+        height: 112px;
         margin-top: 2px;
         display: flex;
         align-items: center;
@@ -27,6 +28,7 @@
             }
             &:nth-child(3) {
                 margin-right: 63px;
+                max-height: 100%;
             }
         }
     }

@@ -465,6 +465,7 @@ body {
 }
 
 .header__container {
+  height: 112px;
   margin-top: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,6 +501,7 @@ body {
 }
 .header__nav-link:nth-child(3) {
   margin-right: 63px;
+  max-height: 100%;
 }
 
 .btn {
