@@ -1,0 +1,13 @@
+.throw {
+    &__container {
+        max-width: 1397px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 51px;
+        padding: 60px 30px;
+        border: 1px solid var(--border-color);
+        border-top: none;
+    }
+
+}
