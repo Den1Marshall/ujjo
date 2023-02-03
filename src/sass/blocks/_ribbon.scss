@@ -1,0 +1,33 @@
+.ribbon {
+    padding: 25px 0;
+    display: flex;
+    gap: 28px;
+    overflow: hidden;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    &__block {
+        display: flex;
+        gap: 28px;
+        animation: ribbon-move linear 2s infinite forwards;
+    }
+
+    @keyframes ribbon-move {
+        from {
+            transform: translateZ(0);
+        }
+
+        to {
+            transform: translate3d(-100%, 0, 0)
+        }
+    }
+
+    &__text {
+        width: 262px;
+        font-size: 17px;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #000;
+    }
+}

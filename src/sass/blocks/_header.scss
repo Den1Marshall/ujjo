@@ -1,0 +1,33 @@
+.header {
+    &__container {
+        margin-top: 2px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #000;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center; 
+        margin-left: 93px;
+        margin-right: 83px;
+
+        &-link {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: var(--header-nav-link-color);
+            text-decoration: none;
+            &:not(:last-child) {
+                margin-right: 150px;
+            }
+            &:nth-child(2) {
+                margin-right: 86px;
+            }
+            &:nth-child(3) {
+                margin-right: 63px;
+            }
+        }
+    }
+}

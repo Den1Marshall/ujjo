@@ -23,25 +23,28 @@ html {
 }
 
 :root {
-    
+    --red-color: #FB4B4D;
+    --header-nav-link-color: #222;
+    --border-color: #000;
+    --title-color: #000;
 }
 
 body {
     width: 100%;
     height: 100%;
-    // font-family: 'Poppins', sans-serif;
-    // font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
-picture {
-    max-width: 100%;
-    height: auto;
-}
+// picture {
+//     max-width: 100%;
+//     height: auto;
+// }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+// img {
+//     max-width: 100%;
+//     height: auto;
+// }
 
 a {
 
@@ -52,7 +55,7 @@ button {
 }
 
 .container {
-    // max-width: CHANGETHIS+padding;
+    max-width: 1427px;
     padding: 0 15px;
     margin: 0 auto;
 }
