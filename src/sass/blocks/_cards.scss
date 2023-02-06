@@ -1,0 +1,85 @@
+.cards {
+    &__container {
+        max-width: 1397px;
+        padding: 23px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 23px;
+        border: 1px solid var(--border-color);
+    }
+
+    &__card {
+        position: relative;
+        width: 436px;
+        height: 658px;
+        background: url('../img/cards/card-background.jpg') center (center/contain) no-repeat;
+        text-align: center;
+        &:first-child {
+            &::before {
+                content: " ";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 58px;
+                height: 58px;
+                background: url('../icons/cards/card-fire.svg');
+            }
+            &::after {
+                content: " ";
+                position: absolute;
+                top: 0;
+                right: -38px;
+                width: 58px;
+                height: 88px;
+                background: url('../icons/cards/card-icon.svg');
+            }
+        }
+        &:nth-child(2) {
+            &::after {
+                content: " ";
+                position: absolute;
+                top: 0;
+                right: -38px;
+                width: 58px;
+                height: 88px;
+                background: url('../icons/cards/card-icon.svg');
+            }
+        }
+        &:last-child {
+            &::before {
+                content: " ";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 58px;
+                height: 58px;
+                background: url('../icons/cards/card-fire.svg');
+            }
+        }
+
+        &-image {
+            width: 390px;
+            height: 411px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 129px;
+        margin-bottom: 13px;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: var(--cards-subtitle-color);
+    }
+
+    &__title {
+        margin-bottom: 14px;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: var(--cards-title-color);
+    }
+}
