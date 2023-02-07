@@ -1,12 +1,12 @@
 .cards {
     &__container {
-        max-width: 1397px;
         padding: 23px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 23px;
         border: 1px solid var(--border-color);
+        border-bottom: none;
     }
 
     &__card {
@@ -25,17 +25,8 @@
                 height: 58px;
                 background: url('../icons/cards/card-fire.svg');
             }
-            &::after {
-                content: " ";
-                position: absolute;
-                top: 0;
-                right: -38px;
-                width: 58px;
-                height: 88px;
-                background: url('../icons/cards/card-icon.svg');
-            }
         }
-        &:nth-child(2) {
+        &:not(:last-child) {
             &::after {
                 content: " ";
                 position: absolute;

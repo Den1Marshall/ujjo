@@ -1,0 +1,23 @@
+.footer {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 93px;
+        background: #CDFD3B;
+        border: 1px solid var(--border-color);
+        border-top: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: var(--footer-link-color);
+        &:last-child {
+            font-size: 16px;
+        }
+    }
+}

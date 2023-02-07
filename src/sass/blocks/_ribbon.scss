@@ -1,34 +1,49 @@
 .ribbon {
+    max-width: 100%;
+    margin: 0 auto;
     padding: 25px 0;
     display: flex;
     gap: 28px;
     overflow: hidden;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
+    border: 1px solid var(--border-color);
+    border-left: none;
+    border-right: none;
+
+    &--large {
+        max-width: 1427px;
+        border: 1px solid var(--border-color);
+    }
+
+    &--second {
+        border-top: none;
+    }
 
     &__block {
+        min-width: 359px;
         display: flex;
-        gap: 28px;
-        animation: ribbon-move linear 2s infinite forwards;
-        will-change: auto;
+        align-items: center;
+        gap: 37px;
+        // will-change: auto;
+        animation: ribbon-move linear 2s infinite;
     }
 
     @keyframes ribbon-move {
         from {
             transform: translateX(-100%);
         }
-
         to {
-            transform: translateX(8%)
+            transform: translateX(8%);
         }
     }
 
     &__text {
-        width: 262px;
         font-size: 17px;
         line-height: 26px;
         letter-spacing: 0.5px;
         text-transform: uppercase;
         color: #000;
+
+        &--second {
+        }
     }
 }

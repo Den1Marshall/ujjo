@@ -1,0 +1,19 @@
+.ujjo {
+    &__container {
+        position: relative;
+        min-height: 756px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--border-color);
+        border-top: none;
+    }
+
+    &__img {
+        width: 100%;
+        position: absolute;
+        top: -202px;
+        left: 0;
+        right: 0;
+    }
+}
