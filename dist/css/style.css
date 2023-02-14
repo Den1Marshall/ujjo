@@ -429,6 +429,7 @@ body {
 }
 .loader {
   position: fixed;
+  top: 0;
   z-index: 9999;
   width: 100vw;
   height: 100vh;
@@ -636,8 +637,8 @@ body {
             transform: translateX(-100%);
   }
   to {
-    -webkit-transform: translateX(8%);
-            transform: translateX(8%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 @keyframes ribbon-move {
@@ -646,8 +647,8 @@ body {
             transform: translateX(-100%);
   }
   to {
-    -webkit-transform: translateX(8%);
-            transform: translateX(8%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 .ribbon__text {

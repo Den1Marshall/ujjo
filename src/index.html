@@ -26,9 +26,11 @@
     <!--  -->
     <script>
       window.addEventListener("load", () => {
-        const loader = document.querySelector(".loader");
-        loader.classList.add("fadeOut_03s");
-        loader.addEventListener("animationend", () => loader.remove());
+        document.querySelector(".loader").style.animation =
+          "fade .4s 1 reverse";
+        setTimeout(() => {
+          document.querySelector(".loader").remove();
+        }, 400);
       });
     </script>
     @@include('html/script.html')
